@@ -12,7 +12,8 @@ This portfolio highlights:
 
 -A downloadable resume
 
-Contact information for networking and hiring
+
+
 
 The site is fully responsive and built with clean, accessible front-end code.
 
