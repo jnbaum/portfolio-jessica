@@ -1,4 +1,4 @@
-Jessica Baum – Developer Portfolio
+Jessica Baum – Developer Portfolio - For collaboration jessica.n.baum@gmail.com
 
 Welcome to my personal portfolio website! This project is an interactive resume and showcase of my software engineering work, designed to support my job search and professional development.
 
@@ -19,16 +19,19 @@ The site is fully responsive and built with clean, accessible front-end code.
 
 Built With:
 
-HTML5
-CSS3
-JavaScript (vanilla)
+HTML5/CSS3/JavaScript (vanilla)
 
 Project Status
 This project is currently in early development. Future milestones include:
 
 -Basic structure and layout
+
 -Appearance and branding
+
 -Interactivity and animations
+
 -Polish and content
+
 -Deployment optimizations
+
 -Deployment on AWS EC2
