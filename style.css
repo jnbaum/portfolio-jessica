@@ -4,6 +4,20 @@
     padding: 0;
 }
 
+.chela-one-regular {
+    font-family: "Chela One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.quicksand-bodyfont{
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -20,14 +34,22 @@ a:hover {
     text-decoration: underline;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h5, h6 {
     font-weight: bold;
     color: #111111;
     margin-bottom: .5em;
 }
 
+h1 {
+    font-family: "Chela One", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 75px;
+    font-weight: bold;
+    color: #081f08;
+}
+
 h4 {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Chela One", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 45px;
     text-align: center;
     font-weight: bold;
     color: #081f08; 
@@ -36,11 +58,6 @@ h4 {
 /*
 p {
     margin-bottom: 1em;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
 }
 
 ul {
@@ -83,101 +100,93 @@ th {
     border: 1px solid #211557;
     background-color: #cdb383;
     border-radius: 8px;
-    margin-left: 220px;
     width: 400px;
-    height: 400px;
-    padding: .5em;
-    margin-bottom: 1em;
+    height: 350px;
+    margin-bottom: 50px;
+
 }
 .boxclasswork {
     border: 1px solid #211557;
     background-color: #cdb383;
     border-radius: 8px;
-    margin-left: 120px;
     width: 400px;
-    height: 400px;
-    padding: .5em;
-    margin-bottom: 1em;
+    height: 350px;
 }
 .boxprojects {
     border: 1px solid #211557;
     background-color: #cdb383;
     border-radius: 8px;
-    margin-left: 120px;
     width: 400px;
-    height: 400px;
-    padding: .5em;
-    margin-bottom: 1em;
+    height: 350px;
 }
 .boxcreative {
     border: 1px solid #c2847a;
     background-color: #cdb383;
     border-radius: 8px;
-    margin-left: 220px;
     width: 400px;
-    height: 400px;
-    padding: .5em;
-    margin-bottom: 1em;
+    height: 350px;
 }
 .boxcareer {
     border: 1px solid #c2847a;
     background-color: #cdb383;
     border-radius: 8px;
-    margin-left: 120px;
     width: 400px;
-    height: 400px;
-    padding: .5em;
-    margin-bottom: 1em;
+    height: 350px;
 }
 .boxcontact {
     border: 1px solid #c2847a;
     background-color: #cdb383;
     border-radius: 8px;
-    margin-left: 120px;
     width: 400px;
-    height: 400px;
-    padding: .5em;
-    margin-bottom: 1em;
+    height: 350px;
 }
-.firstrow {
-    display: flex;
-    flex-direction:0 row;
-    margin-bottom: 50px;
+
+img {
+    float: left; 
+    border-radius: 200px;
+    border: 5px solid #081f08;
+    margin-left: 200px;
+    width: 300px;
+    height: 300px;
 }
-.secondrow {
-    display: flex;
-    flex-direction: row;
-}
-.footer { /* Get this centered */
-    position: fixed;
+
+section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    padding: 10px;
+    margin-left: 160px;
+  }
+
+
+footer { 
+    position: relative;
     bottom: 0;
     width: 100%;
-    background-color: #bb29af;
-    color: white;
+    color: 0181f0;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    margin-left: 900px;
 }
 .blurb { 
     margin-left: 620px;
     margin-right: 220px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    font-family: Arial, Helvetica, sans-serif;
+    margin-top: auto;
+    margin-bottom: 50px;
+    font-family: "Quicksand",Arial, Helvetica, sans-serif;
     font-size: 20px;
     line-height: 1.5;
     text-align: justify;
     text-justify: inter-word;
 }
-.name { /*Change this styling*/
+
+.name {
     margin-left: 620px;
     margin-right: 0px;
     margin-top: 40px;
-    margin-bottom: 40px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    line-height: 1.5;
+    margin-bottom: 0px;
+    line-height: 1.0;
     text-align: justify;
     text-justify: inter-word;
-}
+} 
