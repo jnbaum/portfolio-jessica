@@ -44,7 +44,7 @@ h1 {
     font-family: "Chela One", Tahoma, Geneva, Verdana, sans-serif;
     font-size: 75px;
     font-weight: bold;
-    color: #081f08;
+    color: #42213d;
 }
 
 h4 {
@@ -52,7 +52,7 @@ h4 {
     font-size: 45px;
     text-align: center;
     font-weight: bold;
-    color: #081f08; 
+    color: #42213d; 
     margin-bottom: .5em;
 }
 /*
@@ -96,82 +96,28 @@ th {
     background-color: #f0f0f0;
 }
 */
-.boxabout {
-    border: 1px solid #211557;
-    background-color: #cdb383;
-    border-radius: 8px;
-    width: 400px;
-    height: 350px;
-    margin-bottom: 50px;
-
-}
-.boxclasswork {
-    border: 1px solid #211557;
-    background-color: #cdb383;
-    border-radius: 8px;
-    width: 400px;
-    height: 350px;
-}
-.boxprojects {
-    border: 1px solid #211557;
-    background-color: #cdb383;
-    border-radius: 8px;
-    width: 400px;
-    height: 350px;
-}
-.boxcreative {
-    border: 1px solid #c2847a;
-    background-color: #cdb383;
-    border-radius: 8px;
-    width: 400px;
-    height: 350px;
-}
-.boxcareer {
-    border: 1px solid #c2847a;
-    background-color: #cdb383;
-    border-radius: 8px;
-    width: 400px;
-    height: 350px;
-}
-.boxcontact {
-    border: 1px solid #c2847a;
-    background-color: #cdb383;
-    border-radius: 8px;
-    width: 400px;
-    height: 350px;
-}
-
-img {
+.headshot{
     float: left; 
     border-radius: 200px;
-    border: 5px solid #081f08;
-    margin-left: 200px;
-    width: 300px;
-    height: 300px;
+    border: 2px solid #42213d;
+    margin-left: 5vw;
+    width: 15vw;
+    height: 15vw;
 }
-
-section {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 20px;
-    padding: 10px;
-    margin-left: 160px;
-  }
 
 
 footer { 
     position: relative;
     bottom: 0;
     width: 100%;
-    color: 0181f0;
+    color: #0181f0;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
 }
 .blurb { 
-    margin-left: 620px;
-    margin-right: 220px;
+    margin-left: 400px;
+    margin-right: 380px;
     margin-top: auto;
     margin-bottom: 50px;
     font-family: "Quicksand",Arial, Helvetica, sans-serif;
@@ -182,7 +128,7 @@ footer {
 }
 
 .name {
-    margin-left: 620px;
+    margin-left: 400px;
     margin-right: 0px;
     margin-top: 40px;
     margin-bottom: 0px;
@@ -190,3 +136,68 @@ footer {
     text-align: justify;
     text-justify: inter-word;
 } 
+.sidenav {
+    font-family: "Quicksand",Arial, Helvetica, sans-serif;
+    color: #edebd7; 
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    right: 0;
+    background-color: #A39594; 
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    text-decoration: underline;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #42213d;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+    text-decoration: underline;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-right .5s;
+    padding: 0px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  #menubutton {
+    font-family: "Quicksand",Arial, Helvetica, sans-serif;
+    float: right;
+    padding: 6px 32px;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 20px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
