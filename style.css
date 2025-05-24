@@ -116,15 +116,18 @@ footer {
     text-align: center;
 }
 .blurb { 
-    margin-left: 400px;
-    margin-right: 380px;
+    margin-left: 00px;
+    margin-right: 500px;
     margin-top: auto;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     font-family: "Quicksand",Arial, Helvetica, sans-serif;
     font-size: 20px;
     line-height: 1.5;
     text-align: justify;
-    text-justify: inter-word;
+    /*text-justify: inter-word;*/
+    border-radius: 50px;
+    border: 2px solid;
+    border-color: #42213d;
 }
 
 .name {
