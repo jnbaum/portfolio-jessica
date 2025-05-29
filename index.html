@@ -2,55 +2,81 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Jessica Baum, software engineer and creative technologist.">
-    <link rel="icon" href="favicon.ico"> <!-- create and insert favicon  here-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chela+One&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="myscripts.js"></script>
-    <title>J. Baum Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Jessica Baum, software engineer and creative technologist.">
+  <link rel="icon" href="favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Chela+One&family=Quicksand:wght@300..700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="myscripts.js"></script>
+  <title>J. Baum Portfolio</title>
 </head>
+
 <body>
-<header>
-<span id = menubutton onclick="openNav()">Menu</span> <!--Change this when you get it operational--> 
-   <div id = "mySidenav" class = "sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href = "index.html">Home</a></li>
-            <!--<a href = "about.html">About Me</a></li>-->
-            <a href = "classwork.html">Academic Projects</a></li>
-            <a href = "projects.html">Personal Projects</a></li>
-            <a href = "creative.html">Creative Works</a></li>
-            <a href = "career.html">In Pursuit of Progress</a></li>
-            <a href = "contact.html">Collaborate With Me</a></li>
-    </div>
-        <img class = "headshot" src="Headshot.jpg" width = "200" height = "200" border-radius = "50%" >
-
-    <div class = "name">
-        <h1>Hey, I'm Jessica Baum</h1>
-       <!-- <h3>Software Engineer. Creative Technologist.</h3>-->
-    </div>
-
- </header>
-
-<main>
-
-<div id = "main"></div>
-<div class = "blurb">
-    <p> I'm a soon-to-be graduate with a Master of Science in Software Engineering, a deep curiosity for solving real-world problems with code, and a drive to keep learning long after the classwork ends.
-    From cloud systems and database design to front-end development and game mechanics, my work blends technical skill with creativity. I’m always anchored in thoughtful design and purposeful functionality.
-    Here you’ll find here a curated selection of my work, from academic and personal software projects to creative endeavors outside of tech. Feel free to explore, or <a href = "contact.html" target = "_blank">connect with me.</a></p>
-</div>
-
-
-</div>
-</section>
-<footer>
-    <p>Created by Jessica Baum 2025</p>
-</footer>
+  <header>
     
-</main>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="classwork.html">Academic Projects</a>
+      <a href="projects.html">Personal Projects</a>
+      <a href="creative.html">Creative Works</a>
+      <a href="career.html">In Pursuit of Progress</a>
+      <a href="contact.html">Collaborate With Me</a>
+    </div>
+
+    <img class="headshot" src="Headshot.jpg" width="200" height="200" alt="Jessica Baum headshot" />
+
+    <div class="name">
+      <h1>Hey, I'm Jessica Baum</h1>
+    </div>
+  </header>
+
+  <main>
+    <span id="menubutton" onclick="openNav()">Menu</span>
+    <div id="main"></div>
+
+    <div class="blurb fade-in">
+      <p>
+        I'm a soon-to-be graduate with a Master of Science in Software Engineering, a deep curiosity for solving real-world problems with code, and a drive to keep learning long after the classwork ends.
+        From cloud systems and database design to front-end development and game mechanics, my work blends technical skill with creativity. I’m always anchored in thoughtful design and purposeful functionality.
+        Here you’ll find a curated selection of my work, from academic and personal software projects to creative endeavors outside of tech. Feel free to explore, or
+        <a href="contact.html" target="_blank">connect with me.</a>
+      </p>
+    </div>
+
+    <section id="contact" class="fade-in">
+      <h4>Contact Me</h4>
+      <form action="https://formspree.io/f/your-form-id" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+ 
+
+  <!-- 💬 Glo Chatbot UI -->
+  <div id="gloToggle">💬 Chat with Glo</div>
+
+  <div id="gloChatbot">
+    <div id="gloHeader">
+      <img src="glo-head.png" alt="Glo Avatar" />
+      <span>Glo, the Portfolio Bot</span>
+      <span id="gloClose">&times;</span>
+    </div>
+    <div id="gloMessages">
+      <div class="glo-message glo-bot">Hi! I’m Glo. Ask me about Jessica’s work!</div>
+    </div>
+    <input type="text" id="gloInput" placeholder="Type a message..." />
+  </div> 
+  <footer>
+  
+  </footer>
 </body>
+
 </html>

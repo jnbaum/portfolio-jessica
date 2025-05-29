@@ -1,4 +1,131 @@
-* {
+/* --- Glo Chatbot --- */
+#gloToggle {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: #42213d;
+  color: #edebd7;
+  padding: 12px 16px;
+  border-radius: 50px;
+  cursor: pointer;
+  z-index: 999;
+  font-family: "Quicksand";
+  font-size: 16px;
+}
+
+#gloChatbot {
+  position: fixed;
+  bottom: 5rem;
+  right: 2rem;
+  width: 300px;
+  max-height: 400px;
+  background: #f4f4f4;
+  border: 2px solid #42213d;
+  border-radius: 12px;
+  display: none;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+#gloHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: #a39594;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  font-weight: bold;
+  color: #fff;
+}
+
+#gloHeader img {
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+  border-radius: 50%;
+}
+
+#gloMessages {
+  padding: 10px;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.glo-message {
+  background: #ddd;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 8px;
+}
+
+.glo-bot {
+  background: #e0d3ff;
+  font-weight: bold;
+}
+
+#gloInput {
+  padding: 10px;
+  border: none;
+  border-top: 1px solid #ccc;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  font-family: "Quicksand";
+}
+
+/* --- Contact Form --- */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+form input,
+form textarea {
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  font-family: "Quicksand";
+  border-radius:8px;
+}
+
+form button {
+  padding: 0.75rem;
+  background: #42213d;
+  color: #edebd7;
+  border: none;
+  border-radius: 8px;
+  font-family: "Quicksand";
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #5c2a53;
+}
+
+/* --- Scroll Fade-In Animation --- */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --- Typewriter Styling --- */
+#typewriter {
+  font-size: 24px;
+  font-family: "Quicksand", sans-serif;
+  color: #5c2a53;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+ * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -116,18 +243,16 @@ footer {
     text-align: center;
 }
 .blurb { 
-    margin-left: 00px;
+    margin-left: 400px;
     margin-right: 500px;
     margin-top: auto;
-    margin-bottom: 0px;
+    margin-bottom: 70px;
     font-family: "Quicksand",Arial, Helvetica, sans-serif;
     font-size: 20px;
     line-height: 1.5;
     text-align: justify;
-    /*text-justify: inter-word;*/
-    border-radius: 50px;
-    border: 2px solid;
-    border-color: #42213d;
+    text-justify: inter-word;
+   
 }
 
 .name {
@@ -193,14 +318,17 @@ footer {
   }
 
   #menubutton {
-    font-family: "Quicksand",Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-family: "Quicksand", Arial, Helvetica, sans-serif;
     float: right;
-    padding: 6px 32px;
+    padding: 0px 32px;
     text-align: center;
     text-decoration: underline;
     font-size: 20px;
     margin: 4px 2px;
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
     cursor: pointer;
   }
